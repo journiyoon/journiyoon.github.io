@@ -4,24 +4,41 @@
 
 @charset "utf-8";
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // 스킨
+@import "minimal-mistakes"; // 메인 스타일시트
 
-// 사이드바 너비 조정
+// 여기서부터 커스터마이징 CSS를 추가할 수 있습니다
+.page__title {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.page__content {
+  font-size: 0.9em;
+  line-height: 1.8;
+}
+
+// 사이드바 크기 조정
 .sidebar {
-  width: 100%;
-  @include breakpoint($large) {
-    width: calc(300px); // 너비 조정
-    padding-right: 0;
+  @media (min-width: 1024px) {
+    width: 250px;
   }
 }
 
-// 프로필 텍스트 너비 조정
-.author__bio {
-  margin: 0;
-  @include breakpoint($large) {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    width: 100%; // 너비를 100%로 설정
+// 헤더 소개 텍스트 스타일링
+.page__hero--overlay .page__title,
+.page__hero--overlay .page__lead {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+// 네비게이션 바 스타일링
+.masthead {
+  background-color: #f2f3f3;
+}
+
+// 포스트 스타일링
+.archive__item-title a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
   }
 }
