@@ -1,104 +1,43 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve`. If you change this file, please restart the server process.
-
-# Theme Settings
-#
-# Review documentation to determine if you should use `theme` or `remote_theme`
-# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
-
-theme                  : "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-
 # Site Settings
-locale                   : "en-US"
+locale                   : "ko-KR"  # 한국어 설정으로 변경
 title                    : "코드와 커피 사이: 매일 한 줄씩 채워가는 IT 성장일기"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Journiyoon"
-description              : "물음표 가득한 개발 속 느낌표를 찍고 싶다."
 url                      : "https://journiyoon.github.io"
-
-# Quick-start Guide 제거
+baseurl                  : ""  # 서브디렉토리가 있는 경우 설정
+repository               : "journiyoon/journiyoon.github.io"  # GitHub 저장소
 masthead_title           : " "
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : true  # 상단 경로 표시 활성화
 words_per_minute         : 200
-comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
-  disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
-  utterances:
-    theme                : # "github-light" (default), "github-dark"
-    issue_term           : # "pathname" (default)
-  giscus:
-    repo_id              : # Shown during giscus setup at https://giscus.app
-    category_name        : # Full text name of the category
-    category_id          : # Shown during giscus setup at https://giscus.app
-    discussion_term      : # "pathname" (default), "url", "title", "og:title"
-    reactions_enabled    : # '1' for enabled (default), '0' for disabled
-    theme                : # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
-  staticman:
-    branch               : # "master"
-    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
-reCaptcha:
-  siteKey                :
-  secret                 :
-atom_feed:
-  path                   : # blank (default) uses feed.xml
-  hide                   : # true, false (default)
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
-search_provider          : # lunr (default), algolia, google
+
+# 테마 설정
+minimal_mistakes_skin    : "default"  # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# 검색 기능 활성화
+search                   : true
+search_full_content      : true
+search_provider          : "lunr"
 lunr:
-  search_within_pages    : # true, false (default)
-algolia:
-  application_id         : # YOUR_APPLICATION_ID
-  index_name             : # YOUR_INDEX_NAME
-  search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
-  powered_by             : # true (default), false
-google:
-  search_engine_id       : # YOUR_SEARCH_ENGINE_ID
-  instant_search         : # false (default), true
-# SEO Related
-google_site_verification :
-bing_site_verification   :
-naver_site_verification  :
-yandex_site_verification :
-baidu_site_verification  :
+  search_within_pages    : true
 
-# Social Sharing
-twitter:
-  username               :
-facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 : # Open Graph/Twitter default site image
-# For specifying social profiles
-# - https://developers.google.com/structured-data/customize/social-profiles
-social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+# 댓글 기능 설정 (선택적)
+comments:
+  provider               : "utterances"  # 추천: utterances (GitHub 이슈 기반)
+  utterances:
+    theme                : "github-light"
+    issue_term           : "pathname"
+    repository           : "journiyoon/blog-comments"  # 댓글용 저장소 생성 필요
 
-# Analytics
+# SEO 관련 설정
+google_site_verification : 
+naver_site_verification  : 
+
+# Analytics (선택적)
 analytics:
-  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google-gtag"  # Google Analytics 사용시
   google:
-    tracking_id          :
-    anonymize_ip         : # true, false (default)
-
+    tracking_id          : ""  # 추적 ID 입력
+    anonymize_ip         : false
 
 # Site Author
 author:
@@ -117,51 +56,25 @@ author:
     그럴 때 "어이, 글은 언제 올라와?" 하는 응원 겸 채찍 한 방이면 바로 정신 차립니다! 
     혼자서는 의지가 약해도 누군가 지켜보고 있다는 생각에 힘을 내는 타입이라서요. 
     여러분의 관심과 피드백이 저를 성장시키는 원동력입니다. 함께 배우고 성장해가는 여정에 동참해주세요! 🚀
-
-  location         : "Somewhere"
+  location         : "South Korea"
   email            : "journiyoon@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+      url: "mailto:journiyoon@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://github.com/journiyoon"
+    - label: "DevOps"
+      icon: "fas fa-fw fa-flask"
+      url: "https://devjeon.kr"
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
-
+      url: "https://github.com/journiyoon"
 
 # Reading Files
 include:
@@ -192,14 +105,11 @@ exclude:
   - Rakefile
   - README
   - tmp
-  - /docs # ignore Minimal Mistakes /docs
-  - /test # ignore Minimal Mistakes /test
 keep_files:
   - .git
   - .svn
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-
 
 # Conversion
 markdown: kramdown
@@ -207,7 +117,6 @@ highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
-
 
 # Markdown Processing
 kramdown:
@@ -220,21 +129,18 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-
 # Sass/SCSS
 sass:
   sass_dir: _sass
-  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
+  style: compressed
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 10  # 한 페이지에 표시할 포스트 수 증가
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Seoul  # 한국 시간대 설정
 
-
-# Plugins (previously gems:)
+# Plugins
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -242,51 +148,19 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
-# mimic GitHub Pages with --safe
-whitelist:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-include-cache
-
-
 # Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path>/my-awesome-category/index.html ~> path: /
 category_archive:
   type: liquid
   path: /categories/
 tag_archive:
   type: liquid
   path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
-
 
 # HTML Compression
-# - https://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
     envs: development
-
 
 # Defaults
 defaults:
@@ -298,6 +172,16 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true  # 댓글 기능 활성화
       share: true
       related: true
+      show_date: true  # 날짜 표시
+      toc: true  # 목차 표시
+      toc_sticky: true  # 스크롤 시 목차 고정
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
