@@ -43,9 +43,8 @@ analytics:
 author:
   name             : "Yoon Jiyeon"
   avatar           : "/assets/images/bio-photo.png"
-  bio              : "IT 개발자 | 첫 방문이라면 About을 확인해주세요"
+  bio              : "개발자인 척하다 DevOps까지 넘보는 IT 3년 차"
   location         : "South Korea"
-  email            : "journiyoon@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-eanvelope-square"

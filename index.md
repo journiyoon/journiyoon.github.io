@@ -1,13 +1,13 @@
 ---
 layout: single
 author_profile: true
-title: "소개 올립니다!"
+title: "매일 한 줄씩 채워가는 IT 성장일기"
 permalink: /
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
   overlay_image: /assets/images/header-bg.jpg
-excerpt: "코드와 커피 사이: 매일 한 줄씩 채워가는 IT 성장일기"
+excerpt: "코드와 클라우드 사이: 위태로운 줄타기를 응원해주세요"
 toc: false
 ---
 
@@ -31,8 +31,10 @@ toc: false
 ## 주요 관심사 🖥️
 
 - 클라우드 서비스 (AWS)
-- 프로젝트 관리 및 개발 문화
+- 인프라 자동화 및 CI/CD
+- 컨테이너 기술 (Docker, Kubernetes)
 - 백엔드 개발 (Spring)
+- 프로젝트 관리 및 개발 문화
 
 <div class="notice notice--info">
   <h4>최근 포스트 보기</h4>
