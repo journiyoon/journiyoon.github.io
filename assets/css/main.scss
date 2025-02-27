@@ -7,3 +7,23 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+
+// 사이드바 너비 조정
+.sidebar {
+    width: 100%;
+    @include breakpoint($large) {
+      width: calc(300px); // 너비 조정
+      padding-right: 0;
+    }
+  }
+  
+  // 프로필 텍스트 너비 조정
+  .author__bio {
+    margin: 0;
+    @include breakpoint($large) {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      width: 100%; // 너비를 100%로 설정
+    }
+  }
