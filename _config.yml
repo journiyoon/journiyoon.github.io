@@ -1,6 +1,6 @@
 # Site Settings
 locale                   : "ko-KR"  # 한국어 설정으로 변경
-title                    : "코드와 커피 사이: 매일 한 줄씩 채워가는 IT 성장일기"
+title                    : "코드와 클라우드 사이: 매일 한 줄씩 채워가는 IT 성장일기"
 title_separator          : "-"
 name                     : "Journiyoon"
 url                      : "https://journiyoon.github.io"

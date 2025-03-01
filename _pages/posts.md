@@ -1,6 +1,6 @@
 ---
-title: "모든 포스트"
+title: "Posts"
 permalink: /posts/
-layout: home
+layout: posts
 author_profile: true
 ---
