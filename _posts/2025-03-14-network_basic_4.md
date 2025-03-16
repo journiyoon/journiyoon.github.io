@@ -1,5 +1,5 @@
 ---
-title: 네트워크 수업 리마인드 - 3"
+title: 네트워크 수업 리마인드 - 3
 excerpt: ""
 categories:
   - Network
