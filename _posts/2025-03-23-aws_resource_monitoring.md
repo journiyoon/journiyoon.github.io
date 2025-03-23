@@ -1,15 +1,11 @@
 ---
-title: "포스트 제목"
-excerpt: "포스트 요약 - 목록 페이지에 표시됩니다"
+title: "프로젝트 준비: AWS 리소스 모니터링"
+excerpt: ""
 categories:
-  - Category1
-tags:
-  - Tag1
-  - Tag2
-  - Tag3
+  - AWS
 toc: true
 toc_sticky: true
-last_modified_at: YYYY-MM-DD
+last_modified_at: 2025-03-23
 ---
 
 ## 개요
