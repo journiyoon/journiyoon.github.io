@@ -69,10 +69,11 @@ last_modified_at: 2025-03-23
   - Grafana와 원활한 연동 가능
 
 ### ✅ 정확한 기술스택 구성 및 활용 오픈소스
-| 구분	             | 사용하는 기술 및 오픈소스 라이브러리                    |
-|:----------------|:----------------------------------------|
-| AWS 비용 API      | 	AWS Cost Explorer API                  |
-| AWS 리소스 API     | 	AWS CloudWatch API                     |
-| Exporter (오픈소스) | 	AWS Cost Exporter, CloudWatch Exporter |
-| 데이터 수집 및 저장     | 	Prometheus                             |
-| 시각화	            | Grafana                                 |
+
+| 구분	             | 사용하는 기술 및 오픈소스 라이브러리                     |
+|:----------------|:-----------------------------------------|
+| AWS 비용 API      | 	 AWS Cost Explorer API                  |
+| AWS 리소스 API     | 	AWS CloudWatch API                      |
+| Exporter (오픈소스) | 	 AWS Cost Exporter, CloudWatch Exporter |
+| 데이터 수집 및 저장     | 	 Prometheus                             |
+| 시각화	            | Grafana                                  |
