@@ -3,7 +3,6 @@ title: "네트워크 수업 리마인드 - 5"
 excerpt: "OSI 7Layer 4~7 계층 개념을 정리합니다."
 categories:
   - Network
-tags:
 toc: true
 toc_sticky: true
 last_modified_at: 2025-03-18
