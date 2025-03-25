@@ -33,7 +33,6 @@ toc: false
 - 클라우드 서비스 (AWS)
 - 인프라 자동화 및 CI/CD
 - 컨테이너 기술 (Docker, Kubernetes)
-- 백엔드 개발 (Spring)
 - 프로젝트 관리 및 개발 문화
 
 <div class="notice notice--info">
