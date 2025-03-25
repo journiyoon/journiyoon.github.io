@@ -7,7 +7,7 @@ header:
   overlay_color: "#000"
   overlay_filter: "0.5"
   overlay_image: /assets/images/header-bg.jpg
-excerpt: "코드와 클라우드 사이: 위태로운 줄타기를 응원해주세요"
+excerpt: ""
 toc: false
 ---
 
