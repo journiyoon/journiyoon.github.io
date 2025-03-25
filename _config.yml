@@ -4,7 +4,7 @@ title                    : "코드와 클라우드 사이: 매일 한 줄씩 채
 title_separator          : "-"
 name                     : "Journiyoon"
 url                      : "https://journiyoon.github.io"
-baseurl                  : ""  # 서브디렉토리가 있는 경우 설정
+baseurl                  : "/journiyoon.github.io"  # 서브디렉토리가 있는 경우 설정
 repository               : "journiyoon/journiyoon.github.io"  # GitHub 저장소
 masthead_title           : " "
 breadcrumbs              : true  # 상단 경로 표시 활성화
