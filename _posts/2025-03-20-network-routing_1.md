@@ -10,7 +10,7 @@ toc_sticky: true
 last_modified_at: 2025-03-20
 ---
 
-![img.png](../assets/images/routing.png)
+![img.png](/assets/images/routing.png)
 네트워크 토폴리지
 
 ## RIP 구성 단계
