@@ -31,7 +31,7 @@ ping -c1 -s4000 192.168.100.34
 
 
 이미지 (와이어 샤크 패킷 분석 이미지)   
-![img.png](../assets/images/packet_cap.png)
+![img.png](/assets/images/packet_cap.png)
 
 - ip `192.168.100.47` 기기는 IPv4 또는 ICMP 프로토콜로 1514, 1514, 1082 크기의 패킷을 총 3번 전송
 - ip `192.168.100.34` 기기는 파편화된 패킷을 3번에 걸쳐 수신
