@@ -72,6 +72,33 @@ if (pid == 0) {
 🔍 ps -eo pid,ppid,state,cmd로 확인 가능
 
 ## 5️⃣ 프로세스 간 통신 (IPC)
+
+- 파이프 (pipe, FIFO): 간단한 데이터 흐름
+- 메시지 큐 (msgget, msgsnd): 커널이 관리하는 큐
+- 공유 메모리 (shmget, shmat): 메모리 직접 공유
+- 세마포어 (semget, semop): 동기화 및 잠금
+
+이런 IPC는 `System V`, `POSIX` 방식으로 나뉘며, `ipcs`, `ipcrm` 등으로 관리
+
 ## 6️⃣ 프로세스 관련 주요 명령어
+
+| 명령어              | 설명            |
+|:-----------------|:--------------|
+| `ps aux`         | 현재 모든 프로세스 보기 |
+| `top`, `htopw`   | 실시간 리소스 사용 확인 |
+| `kill PID`       | 프로세스 종료       |
+| `nice`, `renice` | 프로세스 우선순위 조정  |
+| `strace`         | 시스템 호출 추적     |
+| `lsof -p PID`    | 프로세스가 연 파일 확인 |
+| `pmap PID`        | 메모리 앱 확인      |
+
 ## 7️⃣ /proc 가상 파일 시스템
+
+- /proc/[pid]/cmdline : 실행 명령
+- /proc/[pid]/status : 메모리, 상태, 부모 PID 등
+- /proc/[pid]/fd/ : 열린 파일 디스크립터 목록
+- /proc/[pid]/stat : 스케줄링 관련 정보
+- /proc/meminfo, /proc/cpuinfo 등도 시스템 상태 파악에 사용
+
 ## 8️⃣ 실무 팁 / 자주 마주치는 문제
+
