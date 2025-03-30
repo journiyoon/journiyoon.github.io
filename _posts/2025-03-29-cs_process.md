@@ -99,6 +99,3 @@ if (pid == 0) {
 - /proc/[pid]/fd/ : 열린 파일 디스크립터 목록
 - /proc/[pid]/stat : 스케줄링 관련 정보
 - /proc/meminfo, /proc/cpuinfo 등도 시스템 상태 파악에 사용
-
-## 8️⃣ 실무 팁 / 자주 마주치는 문제
-
