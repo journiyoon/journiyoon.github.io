@@ -1,17 +1,11 @@
 ---
 title: "AWS SAA 시험 대비 핵심 Cheatsheet"
-excerpt: ""
+excerpt: "시험 준비용 핵심 개념 요약 정리입니다."
 categories:
   - AWS
 toc: true
 toc_sticky: true
 last_modified_at: 2025-04-06
----
-
-# 🧠 AWS SAA 시험 대비 핵심 Cheatsheet
-
-> 📌 AWS Certified Solutions Architect – Associate 시험 준비용 핵심 개념 요약 정리입니다. 자주 출제되는 서비스, 개념, 제한 사항 위주로 정리했습니다.
-
 ---
 
 ## 📦 EC2 (Elastic Compute Cloud)
