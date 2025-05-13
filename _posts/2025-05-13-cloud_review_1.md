@@ -1,6 +1,6 @@
 ---
-title: "포스트 제목"
-excerpt: "포스트 요약 - 목록 페이지에 표시됩니다"
+title: "AWS 복습2 "
+excerpt: ""
 categories:
   - AWS
 tags:
